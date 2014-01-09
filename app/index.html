@@ -41,8 +41,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li ng-class="{active: activeState == 'guests'}"><a href="#" ng-click="activeState = 'guests'">Guests</a></li>
-                <li ng-class="{active: activeState == 'newGuest'}"><a href="#/guestDetails" ng-click="activeState = 'newGuest'">New Guest</a></li>
+                <li ng-class="{active: view == ''}"><a href="#/">Guests</a></li>
+                <li ng-class="{active: view == 'guestDetails'}"><a href="#/guestDetails">New Guest</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

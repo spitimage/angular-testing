@@ -17,6 +17,6 @@ describe('Controller: NavCtrl', function () {
   }));
 
   it('should have a state variable for nav feedback', function () {
-    expect(scope.activeState).toBeDefined();
+    expect(scope.view).toBeDefined();
   });
 });

@@ -35,7 +35,7 @@ angular.module('angularTestingApp')
           $guests.add($scope.guest);
         }
 
-        $location.path('#/');
+        $location.path('/');
       }
     };
 
