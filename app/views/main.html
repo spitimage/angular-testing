@@ -14,7 +14,7 @@
         </thead>
         <tbody>
         <tr ng-repeat="guest in guests">
-            <td>{{ guest.name }}</td>
+            <td>{{ guest.name | titleCase }}</td>
             <td>{{ guest.bringing }}</td>
             <td>
                 <a class="btn btn-default" href="#/guestDetails/{{ $index }}">Edit</a>
