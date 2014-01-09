@@ -1,36 +1,28 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">angular testing</h3>
-</div>
+<div class="row">
+    <h1>Super Bowl Party Guest List</h1>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+    <div class="alert alert-warning" ng-hide="guests.length > 0"><span class="glyphicon glyphicon-thumbs-down"></span>
+        You have no guests yet
+    </div>
+    <table class="table table-striped" ng-show="guests.length > 0">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Bringing</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="guest in guests">
+            <td>{{ guest.name }}</td>
+            <td>{{ guest.bringing }}</td>
+            <td>
+                <a class="btn btn-default" href="#/guestDetails/{{ $index }}">Edit</a>
+                <a class="btn btn-default" ng-click="onRemove($index)">Remove</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-lg btn-primary" href="#/guestDetails">Add Guest</a>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
 </div>
