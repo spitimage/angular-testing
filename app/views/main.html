@@ -17,12 +17,12 @@
             <td>{{ guest.name | titleCase }}</td>
             <td>{{ guest.bringing }}</td>
             <td>
-                <a class="btn btn-default" href="#/guestDetails/{{ $index }}">Edit</a>
+                <a class="btn btn-default" ng-href="#/guestDetails/{{ $index }}">Edit</a>
                 <a class="btn btn-default" ng-click="onRemove($index)">Remove</a>
             </td>
         </tr>
         </tbody>
     </table>
-    <a class="btn btn-lg btn-primary" href="#/guestDetails">Add Guest</a>
+    <a class="btn btn-lg btn-primary" ng-href="#/guestDetails">Add Guest</a>
 
 </div>
