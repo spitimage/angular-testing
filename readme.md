@@ -16,6 +16,27 @@ So this is a simple application to manage the planning of a Super Bowl party. Yo
 ### Where's the Backend?
 If this were a real project, we'd probably use $http or $resource to interact with a real backend. Here we're only demonstrating frontend testing, so the data services are only temporary.
 
+## Building
+This is a standard yeoman project, so building is straightforward. Assuming you have npm installed, run these commands from the project root:
+
+    npm install -g grunt-cli
+    npm install -g bower
+    npm install
+    bower install
+    grunt test
+
+To run _only_ the karma tests:
+
+    grunt karma
+
+To run _only_ the protractor tests:
+
+    grunt protractor
+
+To run the development server:
+
+    grunt serve
+
 ## Selenium
 The protractor project includes handy scripts for managing both the Selenium server and the individual browser web drivers. To download the latest Selenium and web drivers:
 
