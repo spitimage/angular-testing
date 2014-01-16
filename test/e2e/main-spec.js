@@ -32,5 +32,15 @@ describe('Super Bowl Party Application', function() {
     expect(activeLink.getText()).toEqual('New Guest');
   });
 
+  // Async test
+  it('Should wait for the delayed fake refresh to complete', function(){
+    element(by.id('fakeRefresh')).click();
+    // Fake refresh happens here - promise doesn't return until digest cycle is complete
+    var all = element.all(by.repeater('guest in guests'));
+    all.then(function(arr) {
+      expect(arr.length).toEqual(1);
+    });
+  });
+
 
 });

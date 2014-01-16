@@ -18,11 +18,12 @@
             <td>{{ guest.bringing }}</td>
             <td>
                 <a class="btn btn-default" ng-href="#/guestDetails/{{ $index }}">Edit</a>
-                <a class="btn btn-default" ng-click="onRemove($index)">Remove</a>
+                <a class="btn btn-default remove" ng-click="onRemove($index)">Remove</a>
             </td>
         </tr>
         </tbody>
     </table>
     <a id="add" class="btn btn-lg btn-primary" ng-href="#/guestDetails">Add Guest</a>
+    <a id="fakeRefresh" class="btn btn-lg btn-primary" ng-click="onFakeRefresh()">Fake Refresh</a>
 
 </div>
