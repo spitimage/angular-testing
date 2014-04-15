@@ -20,7 +20,7 @@ angular.module('angularTestingApp')
     // Simulates a backend refresh
     $scope.onFakeRefresh = function(){
       $timeout(function(){
-        $guests.add({name: 'jane doe'});
+        $guests.add({name: 'jane doe', team: 'Broncos'});
       }, 1000);
     };
 

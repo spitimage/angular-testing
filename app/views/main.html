@@ -8,6 +8,7 @@
         <thead>
         <tr>
             <th>Name</th>
+            <th>Favorite Team</th>
             <th>Bringing</th>
             <th></th>
         </tr>
@@ -15,6 +16,7 @@
         <tbody>
         <tr ng-repeat="guest in guests">
             <td>{{ guest.name | titleCase }}</td>
+            <td>{{ guest.team }}</td>
             <td>{{ guest.bringing }}</td>
             <td>
                 <a class="btn btn-default" ng-href="#/guestDetails/{{ $index }}">Edit</a>

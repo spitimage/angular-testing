@@ -4,7 +4,7 @@ angular.module('angularTestingApp')
   .controller('GuestdetailsCtrl', function($scope, $routeParams, $location, $guests, $supplies) {
     // Note all of the navigation for this view is handled in this controller so it COULD be tested as unit tests...
 
-    $scope.guest = {};
+    $scope.guest = {team: 'Broncos'};
     $scope.options = $supplies.all();
     $scope.title = 'Add a New Guest';
 
