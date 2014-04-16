@@ -75,7 +75,7 @@ This is effectively the same as:
 [karma]: http://karma-runner.github.io/0.10/index.html
 [protractor]: https://github.com/angular/protractor
 [prez]: http://spitimage.com/angular-testing-prez
-[prez2]: https://docs.google.com/a/blooco.com/presentation/d/1UHkWDlSGTuDaN9yrc_Jh0Fmv2ofXPetwTurSxqfykK0/edit?usp=sharing
+[prez2]: https://docs.google.com/presentation/d/1UHkWDlSGTuDaN9yrc_Jh0Fmv2ofXPetwTurSxqfykK0/pub?start=false&loop=false&delayms=3000
 [yeoman]: http://yeoman.io/
 [generator]: https://github.com/yeoman/generator-angular
 [ypg]: https://github.com/andresdominguez/generator-protractor
