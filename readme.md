@@ -7,8 +7,11 @@ This is a project to demonstrate the current _unit_ and _end-to-end_ testing cap
 
 To make things as standardized as possible, I created this project with the latest [Yeoman][yeoman] generator for Angular. Since the Angular generator doesn't support [Protractor][protractor] yet, I added all the protractor stuff.
 
-## Slides
-The presentation slides for this project are located [here][prez].
+## Front Range AngularJS Slides
+The presentation slides for this meetup are located [here][prez].
+
+## Colorado Springs Open Source Slides
+The presentation slides for this meetup are located [here][prez2] (special thanks to Rich Beaudoin).
 
 ## The Story
 So this is a simple application to manage the planning of a Super Bowl party. You can add, edit, and remove guests. Also, you can assign goodies (food and drink) for guests to bring. These simple user stories bring some good testing discussion to the surface. The project includes both unit and E2E tests, and we can discuss the merits of both in the context of the application.
@@ -72,6 +75,7 @@ This is effectively the same as:
 [karma]: http://karma-runner.github.io/0.10/index.html
 [protractor]: https://github.com/angular/protractor
 [prez]: http://spitimage.com/angular-testing-prez
+[prez2]: https://docs.google.com/a/blooco.com/presentation/d/1UHkWDlSGTuDaN9yrc_Jh0Fmv2ofXPetwTurSxqfykK0/edit?usp=sharing
 [yeoman]: http://yeoman.io/
 [generator]: https://github.com/yeoman/generator-angular
 [ypg]: https://github.com/andresdominguez/generator-protractor
